@@ -1,0 +1,18 @@
+$fontSizes: (
+  12
+  14
+  16
+  18
+  22
+  26
+);
+
+@function calculateRem($pxValue) {
+  @return #{$pxValue / 16}rem;
+}
+
+@each $fontSize in $fontSizes {
+  .font-size--#{$fontSize} {
+    font-size: calculateRem($fontSize);
+  }
+}
