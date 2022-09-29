@@ -8,10 +8,10 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@quasar/extras": "^1.15.3",
-    "quasar": "^2.8.4",
+    "@vuepic/vue-datepicker": "^3.4.8",
     "vue": "^3.2.38",
     "vue-feather": "^2.0.0",
+    "vue-multiselect": "^3.0.0-alpha.2",
     "vue-router": "^4.1.5"
   },
   "devDependencies": {

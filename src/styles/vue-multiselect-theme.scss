@@ -1,0 +1,12 @@
+@import "./colors";
+.multiselect__option--highlight.multiselect__option--highlight {
+  // A little specificity hack. I feel like it's slightly nicer than using !important
+  background: $color-primary;
+  &.multiselect__option--selected {
+    background: $color-primary;
+  }
+  &:after {
+    content: none;
+    background: transparent;
+  }
+}

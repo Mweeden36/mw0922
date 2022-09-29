@@ -1,28 +1,40 @@
-<script setup>
-import { computed } from 'vue';
-import ToolCardImg from '@/views/ToolCardImg.vue';
+<script>
+import ToolCardImg from '@/components/ToolCardImg.vue';
 import rentalCharges from '@/data/rental_charges';
 
-const props = defineProps({
-  brand: {
-    type: String,
-    required: true,
+export default {
+  props: {
+    brand: {
+      type: String,
+      required: true,
+    },
+
+    code: {
+      type: String,
+      required: true,
+    },
+
+    type: {
+      type: String,
+      required: true,
+    },
   },
 
-  code: {
-    type: String,
-    required: true,
+  components: {
+    ToolCardImg,
   },
 
-  type: {
-    type: String,
-    required: true,
-  },
-});
+  computed: {
+    checkoutUrl() {
+      return `/checkout?tool=${this.code}`;
+    },
 
-const dailyRate = computed(() => {
-  return rentalCharges.find(rentalCharge => rentalCharge.type === props.type).dailyCharge;
-});
+    dailyRate() {
+      return rentalCharges.find(rentalCharge => rentalCharge.type === this.type).dailyCharge;
+    },
+  },
+};
+
 </script>
 
 
@@ -46,12 +58,8 @@ const dailyRate = computed(() => {
 .tool-card__wrapper {
   display: flex;
   box-sizing: border-box;
-  padding: 5px;
-  margin: 10px 0px;
   cursor: pointer;
-  &:hover {
-    box-shadow: 1px 1px 2px 1px $color-tertiary;
-  }
+  text-decoration: none;
   .tool-card-info {
     padding: 0px 5px;
     .tool-card-title {

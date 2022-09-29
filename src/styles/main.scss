@@ -1,5 +1,7 @@
-@import './colors';
-@import './fonts';
+@import "./borders";
+@import "./colors";
+@import "./fonts";
+@import "./vue-multiselect-theme";
 
 * {
   color: $color-font;
@@ -7,7 +9,34 @@
   font-size: 16px;
 }
 
+body {
+  min-height: 100vh;
+  background-color: $color-light-primary;
+}
+
 h1 {
   @extend .font-size--22;
   margin: 0px;
+}
+
+.panel {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-primary;
+  padding: 5px;
+  border: none;
+  border-radius: $border-radius;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
 }
