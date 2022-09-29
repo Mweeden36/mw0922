@@ -2,14 +2,14 @@
   <div class="rental-dates__wrapper" :class="invalid ? 'invalid' : ''">
     <b class="checkout-form__label"> Rental Dates: </b>
     <Datepicker
-      class="date-picker"
+      class="date-picker start"
       v-model="rentalStart"
       :format="format"
       :clearable="false"
     />
     <span class="date-separator">to</span>
     <Datepicker
-      class="date-picker"
+      class="date-picker end"
       v-model="rentalEnd"
       :format="format"
       :clearable="false"

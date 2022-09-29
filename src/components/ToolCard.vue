@@ -1,6 +1,18 @@
+<template>
+  <div class="tool-card__wrapper" :class="code">
+    <ToolCardImg :code="code" class="tool-card-image" />
+    <div class="tool-card-info">
+      <h1 class="tool-card-title">{{ brand }} {{ type }}</h1>
+      <div class="font-size--16">
+        Daily Rate: <b>${{ dailyRate }}</b>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script>
-import ToolCardImg from '@/components/ToolCardImg.vue';
-import rentalCharges from '@/data/rental_charges';
+import ToolCardImg from "@/components/ToolCardImg.vue";
+import rentalCharges from "@/data/rental_charges";
 
 export default {
   props: {
@@ -30,30 +42,16 @@ export default {
     },
 
     dailyRate() {
-      return rentalCharges.find(rentalCharge => rentalCharge.type === this.type).dailyCharge;
+      return rentalCharges.find(
+        (rentalCharge) => rentalCharge.type === this.type
+      ).dailyCharge;
     },
   },
 };
-
 </script>
 
-
-<template>
-  <div class="tool-card__wrapper">
-    <ToolCardImg :code="code" class="tool-card-image" />
-    <div class="tool-card-info">
-      <h1 class="tool-card-title">
-        {{ brand }} {{ type }}
-      </h1>
-      <div class="font-size--16">
-        Daily Rate: <b>${{ dailyRate }}</b>
-      </div>
-    </div>
-  </div>
-</template>
-
 <style lang="scss" scoped>
-@import '../styles/colors';
+@import "../styles/colors";
 
 .tool-card__wrapper {
   display: flex;

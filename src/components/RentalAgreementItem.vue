@@ -78,7 +78,8 @@ export default {
     },
 
     toCurrency(val) {
-      return `$${val}`;
+      console.log(typeof val);
+      return `$${val.toLocaleString()}`;
     },
   },
 };
