@@ -7,7 +7,9 @@
       :itemType="key"
       :value="val"
     />
-    <button @click="$emit('back')">Back to Rental Form</button>
+    <button class="button back" @click="$emit('back')">
+      Back to Rental Form
+    </button>
   </div>
 </template>
 

@@ -4,7 +4,7 @@
     <div class="tool-card-info">
       <h1 class="tool-card-title">{{ brand }} {{ type }}</h1>
       <div class="font-size--16">
-        Daily Rate: <b>${{ dailyRate }}</b>
+        Daily Rate: <b class="tool-rental-rate">${{ dailyRate }}</b>
       </div>
     </div>
   </div>

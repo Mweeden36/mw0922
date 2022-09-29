@@ -78,8 +78,11 @@ export default {
     },
 
     toCurrency(val) {
-      console.log(typeof val);
-      return `$${val.toLocaleString()}`;
+      // Convert to number for toLocaleString.
+      const numericVal = Number(val);
+      return `$${numericVal.toLocaleString(undefined, {
+        minimumFractionDigits: 2,
+      })}`;
     },
   },
 };
