@@ -1,8 +1,8 @@
 import { createApp } from "vue";
-import VueFeather from 'vue-feather';
+import VueFeather from "vue-feather";
 import App from "./App.vue";
 import router from "./router";
-import './styles/main.scss';
+import "./styles/main.scss";
 
 const app = createApp(App);
 

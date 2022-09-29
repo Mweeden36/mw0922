@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'ToolCardImg',
+  name: "ToolCardImg",
 
   props: {
     code: {
@@ -37,14 +37,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/colors';
-@import '../styles/borders';
+@import "../styles/colors";
+@import "../styles/borders";
 
 .tool-card-img__wrapper {
   padding: 10px;
   border: 1px solid $color-tertiary;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
-  background: #FFF;
+  background: #fff;
 }
 </style>
