@@ -1,6 +1,6 @@
 describe("discount_validation", () => {
   it("sets the checkout date to 9/3/15", () => {
-    cy.visit("http://localhost:3002");
+    cy.visit("http://localhost:3001");
     cy.get(".multiselect").click();
     cy.get(".tool-card__wrapper.JAKR").click();
     const rentalDatePicker = cy.get(".date-picker.start");

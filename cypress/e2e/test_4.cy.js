@@ -2,7 +2,7 @@ describe("test 3", () => {
   const rentalDate = "09/03/15";
   const returnDate = "09/09/15";
   it("sets the checkout date to 7/1/22", () => {
-    cy.visit("http://localhost:3002");
+    cy.visit("http://localhost:3001");
     cy.get(".multiselect").click();
     cy.get(".tool-card__wrapper.JAKD").click();
     const rentalDatePicker = cy.get(".date-picker.start");
