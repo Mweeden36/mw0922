@@ -163,11 +163,12 @@ export default {
   width: 500px;
   .checkout-form__item {
     padding: 15px 0px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     .tool-selector {
       display: inline-block;
+    }
+    :deep(.checkout-form__label) {
+      display: block;
+      padding-bottom: 10px;
     }
   }
 }

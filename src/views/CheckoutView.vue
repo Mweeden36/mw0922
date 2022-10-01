@@ -1,12 +1,12 @@
 <template>
-  <main>
+  <div>
     <CheckoutForm @confirm="onConfirmCheckout" v-if="!rentalAgreement" />
     <RentalAgreement
       v-else
       @back="onClickBack"
       :rentalAgreement="rentalAgreement"
     />
-  </main>
+  </div>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="tool-card-img__wrapper">
+  <div class="tool-card-img__wrapper" :class="isError ? 'error' : ''">
     <img v-if="!isError" :src="imgSrc" @error="onImageError" />
     <vue-feather v-else type="tool" />
   </div>
@@ -24,7 +24,7 @@ export default {
 
   computed: {
     imgSrc() {
-      return `../assets/images/${this.code}.jpg`;
+      return `/images/${this.code}.jpg`;
     },
   },
 
@@ -41,10 +41,16 @@ export default {
 @import "../styles/borders";
 
 .tool-card-img__wrapper {
-  padding: 10px;
   border: 1px solid $color-tertiary;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
   background: #fff;
+  &.error {
+    padding: 10px;
+  }
+  img {
+    max-width: 40px;
+    max-height: 40px;
+  }
 }
 </style>

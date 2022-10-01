@@ -12,11 +12,17 @@
 body {
   min-height: 100vh;
   background-color: $color-light-primary;
+  margin: 0px;
 }
 
 h1 {
   @extend .font-size--22;
   margin: 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
 
 .panel {
@@ -31,12 +37,14 @@ button {
   align-items: center;
   justify-content: center;
   background-color: $color-primary;
-  padding: 5px;
+  padding: 10px 15px;
   border: none;
   border-radius: $border-radius;
   outline: none;
   cursor: pointer;
+  font-weight: bold;
   &:hover {
-    box-shadow: $box-shadow;
+    background-color: $color-dark-primary;
+    color: $color-dark-font;
   }
 }

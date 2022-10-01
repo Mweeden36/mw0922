@@ -3,8 +3,10 @@ $color-secondary: #cfd49b;
 $color-tertiary: #729e2f;
 $color-light-primary: lighten($color-primary, 25%);
 $color-light-secondary: lighten($color-secondary, 25%);
+$color-dark-primary: darken($color-primary, 12%);
 
 $color-font: #1c296d;
+$color-dark-font: darken($color-font, 12%);
 
 .color--primary {
   color: $color-primary;
