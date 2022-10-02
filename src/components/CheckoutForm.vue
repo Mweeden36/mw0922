@@ -16,7 +16,7 @@
           <ToolCard
             :brand="props.option.brand"
             :code="props.option.code"
-            :type="props.option.type"
+            :toolType="props.option.type"
           />
         </template>
       </VueMultiselect>
@@ -42,7 +42,7 @@ import DiscountCounter from "@/components/DiscountCounter.vue";
 import RentalDates from "@/components/RentalDates.vue";
 import ToolCard from "@/components/ToolCard.vue";
 import tools from "@/data/tools.json";
-import rental_charges from "@/data/rental_charges.json";
+import rentalChargesMixin from "@/mixins/rentalCharges";
 
 export default {
   name: "CheckoutForm",
@@ -53,6 +53,8 @@ export default {
     ToolCard,
     VueMultiselect,
   },
+
+  mixins: [rentalChargesMixin],
 
   data() {
     return {
@@ -65,12 +67,6 @@ export default {
   },
 
   computed: {
-    dailyCharge() {
-      return rental_charges.find(
-        (rentalCharge) => rentalCharge.type === this.selected.type
-      ).dailyCharge;
-    },
-
     discountAmount() {
       return Number((this.subtotal * (this.discountPercent / 100)).toFixed(2));
     },
@@ -86,7 +82,7 @@ export default {
         returnDate: this.formatDate(this.rentalEnd),
         discountPercent: this.discountPercent,
         chargeableDays: this.daysToRent,
-        dailyCharge: this.dailyCharge.toFixed(2),
+        dailyCharge: this.dailyRate.toFixed(2),
         prediscountAmount: this.subtotal.toFixed(2),
         discountAmount: this.discountAmount.toFixed(2),
         finalAmount: this.total.toFixed(2),
@@ -94,7 +90,7 @@ export default {
     },
 
     subtotal() {
-      return this.dailyCharge * this.daysToRent;
+      return this.dailyRate * this.daysToRent;
     },
 
     toolOptions() {
@@ -104,6 +100,10 @@ export default {
           display: `${tool.brand} ${tool.type}`,
         };
       });
+    },
+
+    toolType() {
+      return this.selected.type;
     },
 
     total() {

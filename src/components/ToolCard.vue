@@ -2,8 +2,8 @@
   <div class="tool-card__wrapper" :class="code">
     <ToolCardImg :code="code" class="tool-card-image" />
     <div class="tool-card-info">
-      <h1 class="tool-card-title">{{ brand }} {{ type }}</h1>
-      <div class="font-size--16">
+      <h1 class="tool-card-title">{{ brand }} {{ toolType }}</h1>
+      <div class="font-size--16" v-if="dailyRate">
         Daily Rate: <b class="tool-rental-rate">${{ dailyRate }}</b>
       </div>
     </div>
@@ -12,7 +12,7 @@
 
 <script>
 import ToolCardImg from "@/components/ToolCardImg.vue";
-import rentalCharges from "@/data/rental_charges";
+import rentalChargesMixin from "@/mixins/rentalCharges";
 
 export default {
   props: {
@@ -26,26 +26,16 @@ export default {
       required: true,
     },
 
-    type: {
+    toolType: {
       type: String,
       required: true,
     },
   },
 
+  mixins: [rentalChargesMixin],
+
   components: {
     ToolCardImg,
-  },
-
-  computed: {
-    checkoutUrl() {
-      return `/checkout?tool=${this.code}`;
-    },
-
-    dailyRate() {
-      return rentalCharges.find(
-        (rentalCharge) => rentalCharge.type === this.type
-      ).dailyCharge;
-    },
   },
 };
 </script>
