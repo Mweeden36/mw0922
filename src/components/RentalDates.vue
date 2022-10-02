@@ -3,6 +3,7 @@
     <b class="checkout-form__label"> Rental Dates: </b>
     <Datepicker
       class="date-picker start"
+      :autoApply="true"
       v-model="rentalStart"
       :format="format"
       :clearable="false"
@@ -10,6 +11,7 @@
     <span class="date-separator">to</span>
     <Datepicker
       class="date-picker end"
+      :autoApply="true"
       v-model="rentalEnd"
       :format="format"
       :clearable="false"

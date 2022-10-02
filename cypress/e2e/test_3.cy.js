@@ -12,7 +12,6 @@ describe("test 3", () => {
     cy.get(".dp__month_year_select[aria-label='Open months overlay']").click();
     cy.get(".dp__overlay_col").contains("Jul").click();
     cy.get(".dp__calendar_item").eq(4).click();
-    cy.get(".dp__select").click();
     rentalDatePicker.find("input").should("have.value", rentalDate);
   });
 
@@ -24,7 +23,6 @@ describe("test 3", () => {
     cy.get(".dp__month_year_select[aria-label='Open months overlay']").click();
     cy.get(".dp__overlay_col").contains("Jul").click();
     cy.get(".dp__calendar_item").eq(11).click();
-    cy.get(".dp__select").click();
     returnDatePicker.find("input").should("have.value", returnDate);
   });
 
