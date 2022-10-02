@@ -1,10 +1,11 @@
 import ToolCard from "@/components/ToolCard.vue";
+import rentalChargesMixin from "@/mixins/rentalCharges";
 
 describe("ToolCard.cy.js", () => {
   it("should get the right label and daily rate for the ridgid jackhammer", () => {
     cy.mount(ToolCard, {
       props: {
-        type: "jackhammer",
+        toolType: "jackhammer",
         code: "JAKR",
         brand: "Ridgid",
       },
@@ -17,7 +18,7 @@ describe("ToolCard.cy.js", () => {
   it("should get the right label and daily rate for the Werner ladder", () => {
     cy.mount(ToolCard, {
       props: {
-        type: "ladder",
+        toolType: "ladder",
         code: "LADW",
         brand: "Werner",
       },

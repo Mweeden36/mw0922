@@ -47,4 +47,12 @@ describe("DiscountCounter.cy.js", () => {
       "Please make sure the discount amount is between 0 and 100%."
     );
   });
+
+  it("should not allow alpha characters in the input", () => {
+    cy.mount(DiscountCounter);
+    const input = cy.get("input[type=number]");
+    input.type("10a");
+    input.should("have.value", 10);
+    input.should("not.have.class", "invalid");
+  });
 });
