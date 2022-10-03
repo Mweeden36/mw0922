@@ -15,4 +15,10 @@ describe("RentalDates.vue", () => {
     vm.rentalEnd = new Date();
     expect(vm.invalid).toEqual(true);
   });
+
+  it("should generate the correct html", () => {
+    const wrapper = mount(RentalDates);
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
 });

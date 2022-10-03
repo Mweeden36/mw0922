@@ -48,6 +48,12 @@ describe("CheckoutForm.vue", () => {
     expect(vm.rentalAgreement).toEqual();
   });
 
+  it("should generate the correct html", () => {
+    const wrapper = shallowMount(CheckoutForm);
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
   it("should prepend zeros to values < 10", () => {
     const { vm } = shallowMount(CheckoutForm);
     for (let i = 0; i <= 9; i++) {

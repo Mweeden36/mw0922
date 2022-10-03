@@ -41,4 +41,15 @@ describe("RentalAgreementItem.vue", () => {
     expect(vm.label).toEqual("Final Amount");
     expect(vm.displayValue).toEqual("$50,124.13");
   });
+
+  it("should generate the correct html", () => {
+    const wrapper = mount(RentalAgreementItem, {
+      props: {
+        itemType: "finalAmount",
+        value: 50124.125,
+      },
+    });
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
 });

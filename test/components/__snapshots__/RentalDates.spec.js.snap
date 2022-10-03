@@ -1,0 +1,41 @@
+// Vitest Snapshot v1
+
+exports[`RentalDates.vue > should generate the correct html 1`] = `
+"<div class=\\"rental-dates__wrapper\\" data-v-36d48911=\\"\\"><b class=\\"checkout-form__label\\" data-v-36d48911=\\"\\"> Rental Dates: </b>
+  <div class=\\"dp__main dp__theme_light date-picker start\\" data-v-36d48911=\\"\\">
+    <div aria-label=\\"Datepicker input\\" role=\\"textbox\\" aria-multiline=\\"false\\" aria-disabled=\\"false\\" aria-readonly=\\"false\\">
+      <!---->
+      <div class=\\"dp__input_wrap\\">
+        <!----><input class=\\"dp__pointer dp__input_readonly dp__input dp__input_icon_pad dp__input_reg\\" inputmode=\\"none\\" placeholder=\\"\\" autocomplete=\\"off\\">
+        <!----><svg version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\" class=\\"dp__icon dp__input_icon dp__input_icons\\">
+          <path d=\\"M29.333 8c0-2.208-1.792-4-4-4h-18.667c-2.208 0-4 1.792-4 4v18.667c0 2.208 1.792 4 4 4h18.667c2.208 0 4-1.792 4-4v-18.667zM26.667 8v18.667c0 0.736-0.597 1.333-1.333 1.333 0 0-18.667 0-18.667 0-0.736 0-1.333-0.597-1.333-1.333 0 0 0-18.667 0-18.667 0-0.736 0.597-1.333 1.333-1.333 0 0 18.667 0 18.667 0 0.736 0 1.333 0.597 1.333 1.333z\\"></path>
+          <path d=\\"M20 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z\\"></path>
+          <path d=\\"M9.333 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z\\"></path>
+          <path d=\\"M4 14.667h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z\\"></path>
+        </svg>
+        <!---->
+        <!---->
+      </div>
+    </div>
+    <!---->
+  </div><span class=\\"date-separator\\" data-v-36d48911=\\"\\">to</span>
+  <div class=\\"dp__main dp__theme_light date-picker end\\" data-v-36d48911=\\"\\">
+    <div aria-label=\\"Datepicker input\\" role=\\"textbox\\" aria-multiline=\\"false\\" aria-disabled=\\"false\\" aria-readonly=\\"false\\">
+      <!---->
+      <div class=\\"dp__input_wrap\\">
+        <!----><input class=\\"dp__pointer dp__input_readonly dp__input dp__input_icon_pad dp__input_reg\\" inputmode=\\"none\\" placeholder=\\"\\" autocomplete=\\"off\\">
+        <!----><svg version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\" class=\\"dp__icon dp__input_icon dp__input_icons\\">
+          <path d=\\"M29.333 8c0-2.208-1.792-4-4-4h-18.667c-2.208 0-4 1.792-4 4v18.667c0 2.208 1.792 4 4 4h18.667c2.208 0 4-1.792 4-4v-18.667zM26.667 8v18.667c0 0.736-0.597 1.333-1.333 1.333 0 0-18.667 0-18.667 0-0.736 0-1.333-0.597-1.333-1.333 0 0 0-18.667 0-18.667 0-0.736 0.597-1.333 1.333-1.333 0 0 18.667 0 18.667 0 0.736 0 1.333 0.597 1.333 1.333z\\"></path>
+          <path d=\\"M20 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z\\"></path>
+          <path d=\\"M9.333 2.667v5.333c0 0.736 0.597 1.333 1.333 1.333s1.333-0.597 1.333-1.333v-5.333c0-0.736-0.597-1.333-1.333-1.333s-1.333 0.597-1.333 1.333z\\"></path>
+          <path d=\\"M4 14.667h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z\\"></path>
+        </svg>
+        <!---->
+        <!---->
+      </div>
+    </div>
+    <!---->
+  </div>
+  <!--v-if-->
+</div>"
+`;

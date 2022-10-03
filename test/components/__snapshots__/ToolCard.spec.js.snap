@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`ToolCard.vue > should generate the correct html 1`] = `
+"<div class=\\"tool-card__wrapper JAKD\\" data-v-589eb99b=\\"\\">
+  <tool-card-img-stub code=\\"JAKD\\" class=\\"tool-card-image\\" data-v-589eb99b=\\"\\"></tool-card-img-stub>
+  <div class=\\"tool-card-info\\" data-v-589eb99b=\\"\\">
+    <h1 class=\\"tool-card-title\\" data-v-589eb99b=\\"\\">DeWalt jackhammer</h1>
+    <div class=\\"font-size--16\\" data-v-589eb99b=\\"\\"> Daily Rate: <b class=\\"tool-rental-rate\\" data-v-589eb99b=\\"\\">$2.99</b></div>
+  </div>
+</div>"
+`;

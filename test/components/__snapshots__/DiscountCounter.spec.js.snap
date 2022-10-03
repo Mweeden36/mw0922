@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`DiscountCounter.vue > should generate the correct html 1`] = `
+"<div class=\\"discount-amount__wrapper\\" data-v-1eab4cab=\\"\\"><b class=\\"checkout-form__label\\" data-v-1eab4cab=\\"\\">Discount Amount:</b><input type=\\"number\\" class=\\"checkout-discount\\" data-v-1eab4cab=\\"\\">
+  <!--v-if-->
+</div>"
+`;

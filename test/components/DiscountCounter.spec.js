@@ -13,6 +13,16 @@ describe("DiscountCounter.vue", () => {
     expect(vm.invalid).toEqual(false);
   });
 
+  it("should generate the correct html", () => {
+    const wrapper = mount(DiscountCounter, {
+      props: {
+        modelValue: 0,
+      },
+    });
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
   it("should mark as invalid when discount amount is initialized as negative", () => {
     const { vm } = mount(DiscountCounter, {
       props: {

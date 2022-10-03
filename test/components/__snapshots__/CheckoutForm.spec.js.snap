@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`CheckoutForm.vue > should generate the correct html 1`] = `
+"<div class=\\"checkout-form__wrapper panel\\" data-v-5f25d85e=\\"\\">
+  <div class=\\"checkout-form__item\\" data-v-5f25d85e=\\"\\"><b class=\\"checkout-form__label\\" data-v-5f25d85e=\\"\\">Select a tool: </b>
+    <vue-multiselect-stub name=\\"\\" selectlabel=\\"Press enter to select\\" selectgrouplabel=\\"Press enter to select group\\" selectedlabel=\\"Selected\\" deselectlabel=\\"\\" deselectgrouplabel=\\"Press enter to deselect group\\" showlabels=\\"true\\" limit=\\"99999\\" maxheight=\\"300\\" limittext=\\"(count) => \`and \${count} more\`\\" loading=\\"false\\" disabled=\\"false\\" opendirection=\\"\\" shownooptions=\\"true\\" shownoresults=\\"true\\" tabindex=\\"0\\" class=\\"tool-selector\\" allowempty=\\"false\\" label=\\"display\\" options=\\"[object Object],[object Object],[object Object],[object Object]\\" placeholder=\\"Select a tool to checkout\\" trackby=\\"code\\" data-v-5f25d85e=\\"\\"></vue-multiselect-stub>
+  </div>
+  <div class=\\"checkout-form__item\\" data-v-5f25d85e=\\"\\">
+    <rental-dates-stub data-v-5f25d85e=\\"\\"></rental-dates-stub>
+  </div>
+  <div class=\\"checkout-form__item\\" data-v-5f25d85e=\\"\\">
+    <discount-counter-stub modelvalue=\\"0\\" data-v-5f25d85e=\\"\\"></discount-counter-stub>
+  </div>
+  <div class=\\"checkout-form__item\\" data-v-5f25d85e=\\"\\"><button class=\\"button checkout-button\\" data-v-5f25d85e=\\"\\"> Checkout </button></div>
+</div>"
+`;

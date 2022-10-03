@@ -16,4 +16,16 @@ describe("ToolCard.vue", () => {
     expect(vm.brand).toEqual("DeWalt");
     expect(vm.dailyRate).toEqual(2.99);
   });
+
+  it("should generate the correct html", () => {
+    const wrapper = shallowMount(ToolCard, {
+      propsData: {
+        code: "JAKD",
+        toolType: "jackhammer",
+        brand: "DeWalt",
+      },
+    });
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
 });

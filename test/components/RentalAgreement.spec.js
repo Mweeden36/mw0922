@@ -23,4 +23,14 @@ describe("RentalAgreement.vue", () => {
     });
     expect(vm.rentalAgreement).toEqual(testAgreement);
   });
+
+  it("should generate the correct html", () => {
+    const wrapper = mount(RentalAgreement, {
+      props: {
+        rentalAgreement: testAgreement,
+      },
+    });
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
 });

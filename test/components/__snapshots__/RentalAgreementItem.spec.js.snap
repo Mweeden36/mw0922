@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`RentalAgreementItem.vue > should generate the correct html 1`] = `"<div class=\\"rental-agreement-item finalAmount\\" data-v-4db1ffff=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Final Amount</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">$50,124.13</span></div>"`;

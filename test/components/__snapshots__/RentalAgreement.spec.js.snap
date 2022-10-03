@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`RentalAgreement.vue > should generate the correct html 1`] = `
+"<div class=\\"rental-agreement panel\\" data-v-5b29b027=\\"\\">
+  <h1 class=\\"rental-agreement__header\\" data-v-5b29b027=\\"\\">Rental Agreement</h1>
+  <div class=\\"rental-agreement-item toolCode\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Tool</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">DeWalt jackhammer</span></div>
+  <div class=\\"rental-agreement-item checkoutDate\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Checkout Date</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">09/01/22</span></div>
+  <div class=\\"rental-agreement-item returnDate\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Return Date</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">09/04/22</span></div>
+  <div class=\\"rental-agreement-item discountPercent\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Discount Percent</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">4%</span></div>
+  <div class=\\"rental-agreement-item chargeableDays\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Chargeable Days</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">3</span></div>
+  <div class=\\"rental-agreement-item dailyCharge\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Daily Charge</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">$1.99</span></div>
+  <div class=\\"rental-agreement-item prediscountAmount\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Pre-discount Amount</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">$5.97</span></div>
+  <div class=\\"rental-agreement-item discountAmount\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Discount Amount</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">$0.24</span></div>
+  <div class=\\"rental-agreement-item finalAmount\\" data-v-4db1ffff=\\"\\" data-v-5b29b027=\\"\\"><b class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">Final Amount</b><span class=\\"rental-agreement__label\\" data-v-4db1ffff=\\"\\">$5.73</span></div><button class=\\"button back\\" data-v-5b29b027=\\"\\"> Back to Rental Form </button>
+</div>"
+`;
