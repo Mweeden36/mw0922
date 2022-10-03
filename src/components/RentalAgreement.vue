@@ -29,12 +29,6 @@ export default {
       required: true,
     },
   },
-
-  methods: {
-    formatCurrency(val) {
-      return `$${val.toFixed(2)}`;
-    },
-  },
 };
 </script>
 

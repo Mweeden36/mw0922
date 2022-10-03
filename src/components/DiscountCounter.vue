@@ -7,6 +7,7 @@
       class="checkout-discount"
       :class="invalid ? 'invalid' : ''"
       @keydown="onKeydown"
+      @focus="$event.target.select()"
     />
     <div v-if="invalid" class="error-notification color--danger">
       Please make sure the discount amount is between 0 and 100%.
@@ -27,7 +28,7 @@ export default {
 
   data() {
     return {
-      discountAmount: this.value,
+      discountAmount: this.modelValue,
       specialKeys: ["ArrowLeft", "ArrowRight", "Backspace", "Delete", "-", "+"],
     };
   },

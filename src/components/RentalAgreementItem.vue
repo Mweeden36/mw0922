@@ -80,8 +80,9 @@ export default {
     toCurrency(val) {
       // Convert to number for toLocaleString.
       const numericVal = Number(val);
-      return `$${numericVal.toLocaleString(undefined, {
-        minimumFractionDigits: 2,
+      return `${numericVal.toLocaleString(undefined, {
+        style: "currency",
+        currency: "USD",
       })}`;
     },
   },

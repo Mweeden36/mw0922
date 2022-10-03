@@ -7,8 +7,10 @@ export default {
     },
 
     rentalCharge() {
-      return rentalCharges.find(
-        (rentalCharge) => rentalCharge.type === this.toolType
+      return (
+        rentalCharges.find(
+          (rentalCharge) => rentalCharge.type === this.toolType
+        ) || {}
       );
     },
   },

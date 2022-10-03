@@ -10,7 +10,7 @@
         :options="toolOptions"
         placeholder="Select a tool to checkout"
         trackBy="code"
-        v-model="selected"
+        v-model="selectedOption"
       >
         <template v-slot:option="props">
           <ToolCard
@@ -58,7 +58,7 @@ export default {
 
   data() {
     return {
-      selected: null,
+      selectedOption: null,
       daysToRent: 0,
       discountPercent: 0,
       rentalStart: null,
@@ -89,6 +89,14 @@ export default {
       };
     },
 
+    selected() {
+      /* There's a bug with vue-multiselect where the placeholder text
+       *  won't show up if the value is {}. Since we want to be able to
+       *  access selected.code in a computed prop, I do this to prevent
+       *  an error */
+      return this.selectedOption ? this.selectedOption : {};
+    },
+
     subtotal() {
       return this.dailyRate * this.daysToRent;
     },
@@ -112,7 +120,9 @@ export default {
 
     valid() {
       return (
-        this.daysToRent > 0 && this.selected !== null && this.discountIsValid
+        this.daysToRent > 0 &&
+        this.selectedOption !== null &&
+        this.discountIsValid
       );
     },
   },
