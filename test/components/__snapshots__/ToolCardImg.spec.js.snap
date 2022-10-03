@@ -1,0 +1,5 @@
+// Vitest Snapshot v1
+
+exports[`Toolcard.vue > should generate the correct non-error html 1`] = `"<div class=\\"tool-card-img__wrapper\\" data-v-40df69f9=\\"\\"><img src=\\"/images/JAKD.jpg\\" data-v-40df69f9=\\"\\"></div>"`;
+
+exports[`Toolcard.vue > should generate the correct non-error html 2`] = `"<div class=\\"tool-card-img__wrapper\\" data-v-40df69f9=\\"\\"><img src=\\"/images/JAKD.jpg\\" data-v-40df69f9=\\"\\"></div>"`;

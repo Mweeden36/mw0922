@@ -31,3 +31,9 @@ npm run lint
 ```sh
 npm run cypress
 ```
+
+### Unit tests!
+
+```sh
+npm run unit
+```
